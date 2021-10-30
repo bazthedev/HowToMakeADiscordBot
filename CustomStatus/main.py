@@ -15,13 +15,10 @@ async def on_ready():
 async def change_status():
   await client.change_presence(activity=random.choice(activities)) # changes bot status to !help
   
- status = ["!help", "This is a status!", "This is another status!"]
+status = ["!help", "This is a status!", "This is another status!"] # put the statuses you want your bot to have
 
 
-
-
-
-activities = [discord.Game(name=random.choice(status)), discord.Activity(type=discord.ActivityType.competing, name=random.choice(status)), discord.Activity(type=discord.ActivityType.watching, name=random.choice(status)), discord.Activity(type=discord.ActivityType.listening, name=random.choice(status)), discord.Streaming(name=random.choice(status), url="https://twitch.tv/itzbazlol")]
+activities = [discord.Game(name=random.choice(status)), discord.Activity(type=discord.ActivityType.competing, name=random.choice(status)), discord.Activity(type=discord.ActivityType.watching, name=random.choice(status)), discord.Activity(type=discord.ActivityType.listening, name=random.choice(status)), discord.Streaming(name=random.choice(status), url="https://twitch.tv/itzbazlol")] # These are all the options your bot can have as a presence
 
 keep_alive() # you only need this if you decide to host on replit
 client.run(os.getenv("TOKEN"))
