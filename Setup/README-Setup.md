@@ -13,3 +13,20 @@
 ## Running the bot:
 ### Now running the code will deploy your bot
 ### If you see the message in your on_ready function then your bot should be online
+
+## Installing discord.py
+### Windows:
+#### Press the windows key and type cmd and press enter
+#### Type `pip install discord` and run
+#### Alternatively if pip is not in your path, type `py -m pip install discord`
+#### If python is not installed to your computer, go to https://python.org/ and download a version that suits you
+
+### Linux:
+#### Go to your linux terminal
+#### Python is usually always installed with linux, if it is not, run `sudo apt install python` in your terminal
+#### Run `pip install discord` or `python3 -m pip install discord`
+#### If this does not work, try writing `sudo pip install discord` or `sudo python3 pip install discord` - This will prompt for your device password to install discord.py
+
+### Replit:
+#### Go to your main.py file and type `import discord`
+#### This will auto install for you in your console window
